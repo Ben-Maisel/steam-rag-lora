@@ -1,0 +1,102 @@
+############################
+# OS / System files
+############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+############################
+# VS Code
+############################
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+############################
+# Logs & temp files
+############################
+*.log
+*.tmp
+*.temp
+*.swp
+*.bak
+*.old
+*.orig
+
+############################
+# Environment & secrets
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# Dependency folders
+############################
+node_modules/
+vendor/
+packages/
+
+############################
+# Build / output
+############################
+dist/
+build/
+out/
+target/
+bin/
+obj/
+
+############################
+# Cache files
+############################
+.cache/
+__pycache__/
+*.py[cod]
+*.class
+
+############################
+# Test / coverage
+############################
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+
+############################
+# Python virtual environments
+############################
+venv/
+.venv/
+env/
+
+############################
+# Jupyter / notebooks
+############################
+.ipynb_checkpoints/
+
+############################
+# Archives
+############################
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+############################
+# Secrets
+############################
+.env
+
+############################
+# Data
+############################
+data/steam_reviews_out
+data/embeddings
+chunking_and_embedding.ipynb
+data/lora/*.jsonl
+

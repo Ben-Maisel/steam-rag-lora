@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Git
+.git
+.gitignore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Large data (should be mounted instead)
+data/steam_reviews_out/
+data/embeddings/
+
+# Outputs generated during runs
+outputs/
+
+# Logs
+*.log
