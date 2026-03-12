@@ -99,4 +99,5 @@ data/steam_reviews_out
 data/embeddings
 chunking_and_embedding.ipynb
 data/lora/*.jsonl
+outputs/steam_lora_adapter/
 

@@ -1,0 +1,266 @@
+Stitching Project Evaluation Outputs
+Timestamp: 20260312_201155
+Agent pipeline:
+rewrite_query -> retrieve_docs -> filter_relevant_docs -> generate_answer
+====================================================================================================
+
+====================================================================================================
+QUESTION 1: What do people think of the graphics in Black Myth: Wukong?
+====================================================================================================
+
+[1] BASE LLM (NO RAG)
+----------------------------------------------------------------------------------------------------
+As of my last update in October 2023, "Black Myth: Wukong" has received significant attention for its impressive graphics and visual fidelity. Many players and critics have praised the game's art style, character designs, and environmental details, highlighting the use of advanced graphics technology that showcases stunning lighting, textures, and animations. The game's visuals are often compared to high-quality cinematic experiences, and the overall aesthetic has been described as both vibrant and immersive.
+
+The game's graphics have been a key selling point, contributing to excitement and anticipation leading up to its release. Players have expressed enthusiasm about the potential for a visually captivating experience that complements the gameplay and storytelling. However, opinions can vary, and some may have specific critiques or preferences regarding certain design choices.
+
+For the most current opinions and reviews, checking recent gaming forums, social media, or review sites would provide the latest insights from the gaming community.
+
+[2] BASIC RAG
+----------------------------------------------------------------------------------------------------
+People think the graphics in Black Myth: Wukong are absolutely stunning and breathtaking. The game is powered by Unreal Engine 5, which allows for masterclass rendering, intricate environmental details, dynamic lighting, and fluid particle effects. Reviewers describe the visuals as next-level, with detailed environments and a cinematic feel that makes every area immersive. Overall, the graphics are highly praised and considered one of the standout features of the game.
+
+[3] ADVANCED AGENTIC RAG WITH BASE MODEL
+----------------------------------------------------------------------------------------------------
+Players generally have a very positive view of the graphics in *Black Myth: Wukong*. The game is praised for its "breathtaking visuals" and "next-level" graphics, which are powered by Unreal Engine 5. Reviewers highlight the intricate environmental details, dynamic lighting, and fluid animations that contribute to a cinematic experience. The environments are described as detailed and immersive, with settings ranging from lush forests to ancient temples, making exploration feel vibrant and alive.
+
+However, there are some criticisms related to the level design. While the visuals are stunning, some players feel that the environments can feel linear due to invisible walls, which may limit exploration compared to more open-world games. Despite this, the overall sentiment remains that the graphics are a standout feature of the game, making it a must-play for fans of visually impressive titles.
+
+[4] ADVANCED AGENTIC RAG WITH FINE-TUNED MODEL
+----------------------------------------------------------------------------------------------------
+
+
+====================================================================================================
+QUESTION 2: Is TEKKEN 8 balanced?
+====================================================================================================
+
+[1] BASE LLM (NO RAG)
+----------------------------------------------------------------------------------------------------
+As of my last update in October 2023, "TEKKEN 8" had not yet been released, so I cannot provide specific information about its balance. Game balance in fighting games like TEKKEN is often assessed after the game has been played extensively by the community, as players discover strategies, character strengths, and weaknesses over time.
+
+Typically, developers release patches and updates to address balance issues based on player feedback and competitive play. For the most accurate and up-to-date information on the balance of "TEKKEN 8," I recommend checking community discussions, patch notes, and reviews from players and professional gamers after the game's release.
+
+[2] BASIC RAG
+----------------------------------------------------------------------------------------------------
+TEKKEN 8 has balancing issues, as noted in several reviews. While some players enjoy the game and find it fun, others express frustration with its mechanics, such as excessive juggling, unresponsive movement, and the presence of "get out of jail free" moves. The game is described as rewarding aggressive gameplay and can feel like a lottery system, where less skilled players can still achieve significant damage with minimal effort. Overall, while it may be enjoyable for casual players, competitive players may find the balance lacking.
+
+[3] ADVANCED AGENTIC RAG WITH BASE MODEL
+----------------------------------------------------------------------------------------------------
+TEKKEN 8 appears to have significant balance issues according to multiple reviews. One reviewer notes that while the game is enjoyable, it does have balancing problems, particularly for competitive players, stating that "unless you are a very competitive and high ranked player it hardly matters much." This suggests that for casual players, the balance may not be as critical, but for those seeking a competitive edge, it is a concern.
+
+Another review criticizes the game for feeling like a "lottery system," where some characters can deal massive damage with less execution required, leading to frustration for players who value traditional gameplay elements like spacing and punishment. The reviewer mentions that matches can often turn into long, non-interactive sequences dominated by extensive combos, which detracts from the sense of interaction and strategic play.
+
+Additionally, a review describes the game as lacking the nuances of previous Tekken titles, stating that "spacing and good defense don't matter anymore," and refers to it as "Coin-Flip 8," indicating a perception that outcomes can feel random rather than skill-based.
+
+In summary, while some players enjoy TEKKEN 8 for its fun and graphics, there is a consensus among critics that the game suffers from balance issues that may alienate traditional Tekken fans and competitive players.
+
+[4] ADVANCED AGENTIC RAG WITH FINE-TUNED MODEL
+----------------------------------------------------------------------------------------------------
+Is TEKKEN 8 balanced?
+
+OPTIONS:
+[1]. No.
+[2]. Yes.
+Answer:
+
+====================================================================================================
+QUESTION 3: What do people think of Blue Prince?
+====================================================================================================
+
+[1] BASE LLM (NO RAG)
+----------------------------------------------------------------------------------------------------
+"Blue Prince" could refer to various subjects, such as a specific product, a character in a story, or a brand. Without more context, it's difficult to provide a specific answer. If you could clarify what "Blue Prince" refers to, I would be happy to help summarize people's opinions or provide relevant information!
+
+[2] BASIC RAG
+----------------------------------------------------------------------------------------------------
+People generally have a very positive opinion of Blue Prince. Reviewers praise its engaging puzzles, unique gameplay mechanics, and the sense of exploration it offers. Many describe it as a must-play for fans of puzzle games and adventure, highlighting its depth and the variety of challenges it presents. The art style and music are also appreciated, contributing to the overall experience. However, some players note that certain puzzles can be quite difficult and may require external help to solve. Despite this, the game is seen as rewarding and satisfying, with a strong recommendation for those willing to embrace its challenges.
+
+[3] ADVANCED AGENTIC RAG WITH BASE MODEL
+----------------------------------------------------------------------------------------------------
+Overall, the sentiment towards *Blue Prince* is very positive, with players praising its depth, unique gameplay mechanics, and engaging puzzles. 
+
+**Praise:**
+1. **In-Depth and Mysterious Gameplay:** Many players appreciate the game's complexity and the way it encourages exploration and understanding of its environment. One reviewer described it as "one of the most in-depth and mysterious games" they've played, highlighting the game's ability to continuously engage players with its labyrinth of puzzles and hidden mechanics (Chunk 1).
+2. **Variety of Puzzles:** The game is noted for its diverse selection of puzzles that keep the experience fresh. Players enjoy the mix of challenges, which makes solving them feel rewarding (Chunk 3).
+3. **Atmosphere and Art Style:** The atmosphere is described as strong, with a cozy art style that enhances the experience. The sound and music design also received praise, contributing to the game's immersive quality (Chunk 2, Chunk 6).
+4. **Slow Burn and Rewarding Progression:** Reviewers appreciate the game's pacing, which allows players to learn and improve gradually. This slow progression is seen as compelling rather than frustrating (Chunk 4, Chunk 5).
+
+**Criticism:**
+1. **Difficulty and Obscurity of Puzzles:** Some players found certain puzzles to be excessively difficult or unintuitive, leading them to seek solutions online. This aspect could frustrate those who prefer a smoother progression (Chunk 3, Chunk 5).
+2. **Roguelike Elements:** The roguelike aspects of the game were seen as both a strength and a weakness. While they add an interesting challenge, they can also lead to moments of frustration when luck affects progress (Chunk 1).
+
+In summary, while *Blue Prince* is highly recommended for fans of puzzle games due to its unique mechanics and engaging atmosphere, potential players should be prepared for challenging puzzles and the roguelike elements that may not appeal to everyone.
+
+[4] ADVANCED AGENTIC RAG WITH FINE-TUNED MODEL
+----------------------------------------------------------------------------------------------------
+is a game that has a lot of influence on the metroidbrainia genre. It's a game that has a lot of potential, but it's not a game that will be a huge success. It's a game that will be a great learning tool for those who are interested in the genre, but it's not a game that will be a huge hit.
+
+Overall, Blue Prince is a game that is worth playing, but it's not a game that will be a huge hit.
+
+[CHUNK 6] chunk_id=1569580_214998239_part2of3 game=Blue Prince sentiment=positive
+Blue Prince is a game that is worth playing, but it's not a game that will be a huge hit.
+
+Visuals: 74
+The artstyle is solid and efficient for its purposes. It never dragged me in that much. Even the better views feel a bit stale. The style seems a bit inconsistent and minimalistic in the wrong way. The
+
+====================================================================================================
+QUESTION 4: What is the gameplay loop of Frostpunk 2 like?
+====================================================================================================
+
+[1] BASE LLM (NO RAG)
+----------------------------------------------------------------------------------------------------
+As of my last knowledge update in October 2023, "Frostpunk 2" is a sequel to the original "Frostpunk," a city-building survival game set in a frozen post-apocalyptic world. While specific gameplay details may evolve as the game is updated or expanded, the core gameplay loop generally includes the following elements:
+
+1. **Resource Management**: Players must gather and manage resources such as coal, wood, steel, and food. Efficient resource management is crucial for survival, as players need to keep their city running and their citizens fed and warm.
+
+2. **City Building**: Players construct buildings and infrastructure to support their population. This includes homes, workshops, medical posts, and gathering posts. The layout and design of the city can significantly impact efficiency and citizen happiness.
+
+3. **Survival Mechanics**: Players must ensure the survival of their citizens by managing their needs, such as hunger, health, and hope. This involves making tough decisions that can affect morale and the overall stability of the community.
+
+4. **Technology Research**: Players can research new technologies to improve their city’s capabilities. This can include advancements in heating, food production, and resource extraction, allowing for more efficient management of the harsh environment.
+
+5. **Decision-Making**: The game often presents moral dilemmas and choices that can affect the society's laws, the citizens' happiness, and the overall direction of the community. Players must weigh the consequences of their decisions carefully.
+
+6. **Exploration**: Players can send scouts to explore the frozen wasteland, discovering new resources, survivors, and potential threats. Exploration can yield valuable rewards but also risks.
+
+7. **Crisis Management**: As the game progresses, players will face various crises, such as extreme weather events, resource shortages, or social unrest. Responding effectively to these challenges is key to maintaining stability.
+
+8. **Narrative Elements**: The game features a narrative that unfolds based on player choices and actions. This can lead to different endings and outcomes, adding replayability and depth to the experience.
+
+Overall, the gameplay loop of "Frostpunk 2" emphasizes balancing resource management, city building, and moral decision-making in a harsh, unforgiving environment. Players must adapt to changing conditions and make difficult choices to ensure the survival and prosperity of their society. For the most accurate and up-to-date information, I recommend checking official sources or community discussions related to the game.
+
+[2] BASIC RAG
+----------------------------------------------------------------------------------------------------
+The gameplay loop of Frostpunk 2 is significantly different from its predecessor, focusing on managing a large city rather than individual citizens. Players take on the role of a political leader, guiding a sprawling industrial city through challenges related to population growth, resource scarcity, and ideological conflicts among various factions. The game emphasizes district-based city planning, where players develop specific areas for housing, industry, and resource extraction, shifting the focus from micro-management to large-scale strategy.
+
+Resource management remains crucial, with players needing to balance growth and sustainability while navigating the political landscape. The citizens are divided into factions with differing beliefs, requiring players to negotiate laws and policies that can please some groups while angering others. Moral dilemmas are present, but decisions often feel less impactful on a personal level compared to the first game, as the population is larger and individual deaths are less consequential.
+
+Exploration also plays a role, with players sending expeditions into the frozen wilderness to uncover new resources and narrative elements. Overall, the gameplay loop revolves around city-building, political negotiation, and managing the complexities of a growing society in a harsh environment.
+
+[3] ADVANCED AGENTIC RAG WITH BASE MODEL
+----------------------------------------------------------------------------------------------------
+The gameplay loop of **Frostpunk 2** significantly diverges from its predecessor, focusing more on political management and societal simulation rather than the intense survival mechanics that defined the first game. 
+
+**Praise:**
+- Players manage factions and laws, which creates an exhilarating and tense atmosphere, especially in the early and mid-game stages. The game emphasizes large-scale planning through a district-based system, where players develop entire districts for specific purposes like housing or industry, shifting the focus from micro-management to broader strategic decisions (Chunk 2, Chunk 3).
+- The political simulation is a highlight, as players must navigate the complexities of managing multiple factions with differing ideologies, which adds depth to the gameplay (Chunk 3, Chunk 6).
+- Resource management remains crucial, with players needing to balance growth and sustainability while dealing with limited resources in a harsh environment (Chunk 2, Chunk 7).
+
+**Criticism:**
+- Many players feel that the shift towards political management detracts from the survival aspects that made the first game compelling. The gameplay now revolves more around negotiating with factions and managing their expectations rather than the hands-on survival mechanics (Chunk 5).
+- The late-game experience can suffer from performance issues, such as lag during autosaves, which can detract from the overall experience (Chunk 4).
+- Some reviewers argue that the game feels more like a spinoff than a true sequel, as it does not retain many of the core features from the first game, leading to a perception that it is a completely different experience (Chunk 3, Chunk 7).
+
+In summary, **Frostpunk 2** offers a complex gameplay loop centered on political strategy and societal management, with a notable shift away from the survival mechanics that characterized the original game. While this change has been praised for its depth, it has also drawn criticism from players who preferred the survival-focused gameplay of the first installment.
+
+[4] ADVANCED AGENTIC RAG WITH FINE-TUNED MODEL
+----------------------------------------------------------------------------------------------------
+Frostpunk 2 is a survival city management game with building mechanics, more in common with games like Civilization in terms of how you build this city, as you are not placing individual structures but districts in hexagon shaped tiles. Different districs produce or manage certain peramiters in the city and keeps things under control (most of the time). You still have a generator you need to attend to in order for the city to keep its temperatures in check, all the resources around the city is limited, meaning they will run out (except a few deposits which has infinite yield but they are highly inefficent) 
+
+Just like in the first game you have explorers (scouts) that ventures out of the city limits to find resources and more people, and here´s what this game does different: You need to build more than one city in order to survive. In late game its not just one settlement you need to build and manage, you will have several which feeds the main city with resources. The building mechanics behind these settlements is in the same way as the city itself
+
+====================================================================================================
+QUESTION 5: Is Kingdom Come: Deliverance 2 worth it?
+====================================================================================================
+
+[1] BASE LLM (NO RAG)
+----------------------------------------------------------------------------------------------------
+As of my last knowledge update in October 2023, "Kingdom Come: Deliverance 2" had not been officially announced, so I cannot provide specific insights about its worth or content. However, if you're considering whether to invest time or money in a potential sequel, here are some factors to consider based on the original game:
+
+1. **Gameplay Mechanics**: The original "Kingdom Come: Deliverance" was praised for its realistic approach to medieval life, including combat mechanics, crafting, and survival elements. If a sequel builds on these mechanics and improves upon them, it could be worth it.
+
+2. **Story and Setting**: The narrative and historical setting of the first game were well-received. If the sequel promises a compelling story and rich world-building, it may appeal to fans of narrative-driven games.
+
+3. **Community Feedback**: Keep an eye on community discussions and reviews once the game is released. Player feedback can provide valuable insights into whether the sequel meets expectations.
+
+4. **Improvements and Innovations**: If the sequel introduces new features, improved graphics, or enhanced gameplay systems, it could be a significant upgrade over the original.
+
+5. **Personal Preference**: Ultimately, whether a game is worth it depends on your personal gaming preferences. If you enjoyed the first game and are interested in its themes and mechanics, a sequel may be worth your time.
+
+For the most accurate and up-to-date information, I recommend checking recent reviews, gameplay trailers, and community discussions once the game is officially announced or released.
+
+[2] BASIC RAG
+----------------------------------------------------------------------------------------------------
+Based on the provided Steam review chunks, Kingdom Come: Deliverance 2 appears to be worth it for many players. The reviews highlight its engaging story, immersive world, improved mechanics, and the depth of gameplay. Players appreciate the realism, challenging combat, and the attention to detail in the medieval setting. Several reviews express strong positive sentiments, with one even rating it 10/10.
+
+However, there are also negative reviews that criticize the game for being tedious and having long stretches of gameplay that feel like a waste of time. Some players found the pacing slow and the narrative too focused on cutscenes.
+
+Overall, while many players find it a rewarding and immersive experience, others feel it may not be for everyone. If you enjoy realistic RPGs and story-driven adventures, it seems like a game worth trying.
+
+[3] ADVANCED AGENTIC RAG WITH BASE MODEL
+----------------------------------------------------------------------------------------------------
+Kingdom Come: Deliverance 2 has received a mix of praise and criticism from players, making it a nuanced recommendation.
+
+**Praise:**
+1. **Immersive World and Realism:** Many reviews highlight the game's detailed and lively medieval world, with bustling towns and a focus on historical authenticity. Players appreciate the realism in combat, where skill and patience are essential, and the progression system that feels natural as you practice different skills.
+2. **Engaging Story and Characters:** The narrative is described as compelling, with well-developed characters and meaningful choices that impact the story. The humor and depth of the characters, including side quests that rival those in other acclaimed RPGs, are also noted as strong points.
+3. **Visuals and Atmosphere:** The game is praised for its stunning landscapes and immersive atmosphere, which enhance the overall experience of exploring 15th-century Bohemia.
+
+**Criticism:**
+1. **Pacing and Length of Cutscenes:** Some players feel that the game suffers from excessive cutscenes, which can disrupt the flow of gameplay. One review mentions that about 45% of the game consists of cutscenes, likening it to a TV show rather than a traditional video game.
+2. **Simplified Mechanics:** There are concerns about the simplification of certain mechanics compared to the first game, such as hunger and sleep management, which some players found less challenging.
+3. **Unresolved Plot Threads:** A few reviews express disappointment with the ending and the decision to leave plot threads dangling for potential future installments.
+
+Overall, while Kingdom Come: Deliverance 2 is regarded as a significant improvement over its predecessor and offers a rich RPG experience, it also has its share of flaws that may affect some players' enjoyment. If you appreciate realistic RPGs with deep storytelling and character development, it may be worth playing, but be aware of its pacing issues and simplified mechanics.
+
+[4] ADVANCED AGENTIC RAG WITH FINE-TUNED MODEL
+----------------------------------------------------------------------------------------------------
+game.
+
+The story is not just good, it's amazing. It's a real story, not a fantasy. It's a real historical event, not a fictional one. It's a real event that happened in the 15th century, not some fictional event. It's a real event that happened in Bohemia, not some fictional event.
+
+The characters are not just good, they are amazing. They are so well-written, so well-developed, so well-played. They are so charismatic, so so real. They are so well-written that you can almost feel them.
+
+The gameplay is amazing. It's not just a game, it's an experience. It's a journey through time, through history, through the world of the game. It's a journey that you can't help but be a part of.
+
+The graphics are amazing. They are not just stunning, they are breathtaking. They are so realistic, so detailed, so immersive. They are so real that you can almost feel the atmosphere of the game.
+
+====================================================================================================
+QUESTION 6: What do players think about the difficulty of Monster Hunter Wilds?
+====================================================================================================
+
+[1] BASE LLM (NO RAG)
+----------------------------------------------------------------------------------------------------
+"Monster Hunter: World" has generally been well-received for its balance of challenge and accessibility. Players appreciate the game's difficulty for several reasons:
+
+1. **Learning Curve**: Many players enjoy the steep learning curve, which encourages them to master the mechanics, weapon types, and monster behaviors. This depth adds to the satisfaction of overcoming challenges.
+
+2. **Co-op Play**: The multiplayer aspect allows players to team up, making difficult hunts more manageable and enjoyable. Many players find that collaborating with friends enhances the experience and reduces frustration.
+
+3. **Variety of Monsters**: The diverse range of monsters, each with unique behaviors and attack patterns, keeps the gameplay fresh and challenging. Players often enjoy the thrill of learning how to counter each monster's strengths and weaknesses.
+
+4. **Customization and Strategy**: The ability to customize gear and develop strategies for different hunts adds layers of complexity. Players appreciate that they can tailor their approach based on their playstyle and the specific monster they are facing.
+
+5. **Frustration vs. Reward**: While some players find certain hunts frustrating, many feel that the sense of accomplishment after defeating a tough monster is worth the effort. The game strikes a balance between challenge and reward, which is a key aspect of its appeal.
+
+Overall, while some players may find certain aspects of "Monster Hunter: World" challenging, the majority appreciate the difficulty as part of the game's charm and depth.
+
+[2] BASIC RAG
+----------------------------------------------------------------------------------------------------
+Players have mixed opinions about the difficulty of Monster Hunter Wilds. Some reviews indicate that the difficulty is perceived as low, making hunts feel boring and unrewarding, especially in the early game. One reviewer specifically mentions that the base game was "very, very easy" and that they encountered no difficulty up to the final boss of High Rank, attributing this to the new wound mechanic that made monsters less aggressive and easier to defeat.
+
+However, other players note that while Low Rank is designed to be more accessible, High Rank offers a more traditional Monster Hunter experience with challenging fights that test players' skills. One review mentions that the real challenge comes in High Rank, where players can face tougher monsters and enjoy more rewarding gameplay.
+
+Overall, it seems that while the early game may be easy, the difficulty can ramp up in High Rank, providing a more engaging experience for players looking for a challenge.
+
+[3] ADVANCED AGENTIC RAG WITH BASE MODEL
+----------------------------------------------------------------------------------------------------
+Players have mixed opinions about the difficulty of *Monster Hunter Wilds*. 
+
+On the criticism side, some players feel that the difficulty is too low, particularly in the early stages. One reviewer noted that hunts can become "boring and unrewarding," stating that the AI hunters trivialize combat and diminish the cooperative aspect of the game. This sentiment suggests that the game may not provide a satisfying challenge for players of varying skill levels, especially when compared to previous titles like *Monster Hunter World*.
+
+Conversely, there are players who appreciate the game's approach to difficulty. One reviewer mentioned that while low rank is intentionally easy to facilitate story progression, the difficulty does increase in high rank, especially after updates that introduced new monsters. They noted that the game starts off easy but picks up in challenge later on, particularly with high rank and tempered monsters, which can require multiple attempts and strategic adjustments to defeat.
+
+Overall, while some players find the initial difficulty lacking, others recognize that it improves as the game progresses, especially with updates that enhance the challenge.
+
+[4] ADVANCED AGENTIC RAG WITH FINE-TUNED MODEL
+----------------------------------------------------------------------------------------------------
+Conclusion:[/h2]
+The game is a solid base-game/high rank experience, with a solid roster of monsters and a solid gameplay experience. The game is a solid base-game/high rank experience, with a solid roster of monsters and a solid gameplay experience. The game is a solid base-game/high rank experience, with a solid roster of monsters and a solid gameplay experience.
+
+[h2]Conclusion:[/h2]
+The game is a solid base-game/high rank experience, with a solid roster of monsters and a solid gameplay experience. The game is a solid base-game/high rank experience, with a solid roster of monsters and a solid gameplay experience. The game is a solid base-game/high rank experience, with a solid roster of monsters and a solid gameplay experience.
+
+[h2]Conclusion:[/h2]
+The game is a solid base-game/high rank experience, with a solid roster of monsters and a solid gameplay experience. The game
+
