@@ -195,6 +195,13 @@ def judge_question(
 
     text = response.output_text.strip()
 
+    # Remove markdown code fences if the model wrapped JSON in ```json ... ```
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+
+    text = text.strip()
+
     try:
         return json.loads(text)
     except json.JSONDecodeError as e:

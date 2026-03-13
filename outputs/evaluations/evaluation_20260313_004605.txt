@@ -1,0 +1,240 @@
+LLM Evaluation of Latest Stitching Project Responses
+Timestamp: 2026-03-13 00:46:05
+Source response file: outputs/responses/assignment_outputs_20260312_201155.txt
+Judge model: gpt-4o-mini
+====================================================================================================
+
+Average Scores
+----------------------------------------------------------------------------------------------------
+Base LLM (No RAG)
+  groundedness: 1.333
+  completeness: 1.833
+  nuance: 1.5
+  clarity: 2.333
+  overall_quality: 1.667
+
+Basic RAG
+  groundedness: 3.5
+  completeness: 3.833
+  nuance: 3.333
+  clarity: 4.0
+  overall_quality: 3.5
+
+Advanced Agentic RAG with Base Model
+  groundedness: 4.833
+  completeness: 4.833
+  nuance: 4.833
+  clarity: 4.833
+  overall_quality: 5.0
+
+Advanced Agentic RAG with Fine-Tuned Model
+  groundedness: 2.167
+  completeness: 2.167
+  nuance: 1.833
+  clarity: 2.167
+  overall_quality: 2.0
+
+Ranking by Average Overall Quality
+----------------------------------------------------------------------------------------------------
+1. Advanced Agentic RAG with Base Model - overall_quality=5.0
+2. Basic RAG - overall_quality=3.5
+3. Advanced Agentic RAG with Fine-Tuned Model - overall_quality=2.0
+4. Base LLM (No RAG) - overall_quality=1.667
+
+====================================================================================================
+QUESTION: What do people think of the graphics in Black Myth: Wukong?
+====================================================================================================
+
+Base LLM (No RAG)
+----------------------------------------------------------------------------------------------------
+groundedness=2, completeness=3, nuance=2, clarity=4, overall_quality=3
+rationale: The answer is somewhat grounded in the context of player expectations but lacks specific references to reviews. It provides general insights but is not very detailed.
+
+Basic RAG
+----------------------------------------------------------------------------------------------------
+groundedness=3, completeness=4, nuance=3, clarity=4, overall_quality=4
+rationale: This response effectively highlights player praise for the game's graphics and provides specific details about the technology used. However, it could improve on nuance to acknowledge mixed sentiment.
+
+Advanced Agentic RAG with Base Model
+----------------------------------------------------------------------------------------------------
+groundedness=5, completeness=5, nuance=4, clarity=5, overall_quality=5
+rationale: This response thoroughly covers the positive sentiment regarding the graphics while also noting criticisms about level design. It is grounded in review evidence and articulately addresses mixed sentiment.
+
+Advanced Agentic RAG with Fine-Tuned Model
+----------------------------------------------------------------------------------------------------
+groundedness=4, completeness=4, nuance=3, clarity=3, overall_quality=3
+rationale: The response provides specific feedback related to the game's graphics, but it lacks depth compared to advanced models and may not clearly articulate both positive and negative sentiments.
+
+Best to worst ranking:
+1. Advanced Agentic RAG with Base Model
+2. Basic RAG
+3. Advanced Agentic RAG with Fine-Tuned Model
+4. Base LLM (No RAG)
+
+Overall comparison:
+The advanced agentic RAG with the base model stands out as the best system due to its comprehensive coverage of both praise and critique regarding the game's graphics. The basic RAG also performs well, but lacks some nuance. The fine-tuned model, while relevant, does not reach the depth of the top two. The base LLM scores the lowest due to its generic, outdated response lacking in grounding.
+
+====================================================================================================
+QUESTION: Is TEKKEN 8 balanced?
+====================================================================================================
+
+Base LLM (No RAG)
+----------------------------------------------------------------------------------------------------
+groundedness=1, completeness=1, nuance=1, clarity=1, overall_quality=1
+rationale: The response is completely generic, mentions the game's release status without addressing the balance concern, and lacks any review-based grounding or sentiment.
+
+Basic RAG
+----------------------------------------------------------------------------------------------------
+groundedness=3, completeness=4, nuance=3, clarity=4, overall_quality=3
+rationale: The answer references multiple reviews and presents both positive and negative aspects, but could have better grounding in specific reviews and more nuance in sentiment.
+
+Advanced Agentic RAG with Base Model
+----------------------------------------------------------------------------------------------------
+groundedness=5, completeness=5, nuance=5, clarity=5, overall_quality=5
+rationale: This response excellently grounds its claims in detailed review points and captures mixed sentiments effectively, providing a nuanced and thorough examination of balance issues.
+
+Advanced Agentic RAG with Fine-Tuned Model
+----------------------------------------------------------------------------------------------------
+groundedness=1, completeness=1, nuance=1, clarity=1, overall_quality=1
+rationale: The response provides no actual content relevant to the question, simply offers two options without any explanation, limiting its usefulness.
+
+Best to worst ranking:
+1. Advanced Agentic RAG with Base Model
+2. Basic RAG
+3. Base LLM (No RAG)
+4. Advanced Agentic RAG with Fine-Tuned Model
+
+Overall comparison:
+The advanced agentic RAG with the base model delivers the most comprehensive and grounded response to the question about game balance, effectively pulling from specific reviews. The basic RAG follows, providing some insight but lacks the depth and detail of the top response. The base LLM falls short, offering outdated information and lacking relevance. Lastly, the fine-tuned model fails entirely, delivering an unhelpful binary response.
+
+====================================================================================================
+QUESTION: What do people think of Blue Prince?
+====================================================================================================
+
+Base LLM (No RAG)
+----------------------------------------------------------------------------------------------------
+groundedness=1, completeness=1, nuance=1, clarity=1, overall_quality=1
+rationale: The response is vague and does not provide relevant information about the game, making it entirely ungrounded.
+
+Basic RAG
+----------------------------------------------------------------------------------------------------
+groundedness=4, completeness=4, nuance=4, clarity=4, overall_quality=4
+rationale: This response provides a generally positive sentiment with specific details from reviews and a balance of pros and cons, demonstrating good grounding in likely review evidence.
+
+Advanced Agentic RAG with Base Model
+----------------------------------------------------------------------------------------------------
+groundedness=5, completeness=5, nuance=5, clarity=5, overall_quality=5
+rationale: This answer is well-structured, detailed, and grounded in mixed sentiments from reviews. It addresses both strengths and weaknesses effectively.
+
+Advanced Agentic RAG with Fine-Tuned Model
+----------------------------------------------------------------------------------------------------
+groundedness=2, completeness=2, nuance=2, clarity=3, overall_quality=2
+rationale: The response lacks specificity and coherence. While it mentions potential and worthiness to play, it fails to provide a balanced and comprehensive view.
+
+Best to worst ranking:
+1. Advanced Agentic RAG with Base Model
+2. Basic RAG
+3. Advanced Agentic RAG with Fine-Tuned Model
+4. Base LLM (No RAG)
+
+Overall comparison:
+The advanced agentic RAG with the base model offers the most grounded and comprehensive response, effectively capturing both the positive and negative sentiments of reviews. The basic RAG also provides a solid summary but lacks some depth. The fine-tuned model, while better than the no-retrieval LLM, suffers from coherence issues and limited nuance, while the base LLM is wholly ungrounded and fails to answer the question.
+
+====================================================================================================
+QUESTION: What is the gameplay loop of Frostpunk 2 like?
+====================================================================================================
+
+Base LLM (No RAG)
+----------------------------------------------------------------------------------------------------
+groundedness=1, completeness=2, nuance=2, clarity=3, overall_quality=2
+rationale: The response provides generic gameplay elements without grounding in specific reviews. It lists various game mechanics but lacks depth, nuance, and specific examples.
+
+Basic RAG
+----------------------------------------------------------------------------------------------------
+groundedness=3, completeness=3, nuance=3, clarity=4, overall_quality=3
+rationale: This response includes relevant points about the gameplay loop, such as political dynamics and resource management. However, it could delve deeper into mixed sentiments and specific criticisms.
+
+Advanced Agentic RAG with Base Model
+----------------------------------------------------------------------------------------------------
+groundedness=5, completeness=5, nuance=5, clarity=5, overall_quality=5
+rationale: This response is well-rounded, mentioning both praises and criticisms of the gameplay loop. It draws on potentially specific evidence from reviews, making it highly grounded and complete.
+
+Advanced Agentic RAG with Fine-Tuned Model
+----------------------------------------------------------------------------------------------------
+groundedness=3, completeness=3, nuance=3, clarity=3, overall_quality=3
+rationale: The fine-tuned model provides a relevant overview but lacks the depth and grounding found in the advanced model's response. There are missed opportunities to mention mixed sentiments and to support claims with solid evidence.
+
+Best to worst ranking:
+1. Advanced Agentic RAG with Base Model
+2. Basic RAG
+3. Advanced Agentic RAG with Fine-Tuned Model
+4. Base LLM (No RAG)
+
+Overall comparison:
+The rankings illustrate that the advanced agentic RAG with a base model outperformed the others in grounding, completeness, nuance, and clarity, providing a comprehensive look at the gameplay loop. The basic RAG followed closely, offering good insights but lacking depth in mixed sentiments. The fine-tuned model was competent but didn't fully match the richness of the other models. In contrast, the base LLM without retrieval was generic and less relevant to the specific question.
+
+====================================================================================================
+QUESTION: Is Kingdom Come: Deliverance 2 worth it?
+====================================================================================================
+
+Base LLM (No RAG)
+----------------------------------------------------------------------------------------------------
+groundedness=1, completeness=1, nuance=1, clarity=1, overall_quality=1
+rationale: The response is generic and based on outdated knowledge. It lacks specific insights about the game, which is critical for answering the question.
+
+Basic RAG
+----------------------------------------------------------------------------------------------------
+groundedness=4, completeness=4, nuance=3, clarity=4, overall_quality=3
+rationale: The response effectively utilizes review evidence to provide positives and some negatives, making it relevant and informative, though it could balance sentiment better.
+
+Advanced Agentic RAG with Base Model
+----------------------------------------------------------------------------------------------------
+groundedness=5, completeness=5, nuance=5, clarity=4, overall_quality=5
+rationale: This response offers a comprehensive, nuanced evaluation grounded in review evidence, presenting both praises and criticisms clearly and effectively.
+
+Advanced Agentic RAG with Fine-Tuned Model
+----------------------------------------------------------------------------------------------------
+groundedness=2, completeness=2, nuance=1, clarity=2, overall_quality=2
+rationale: The response is overly vague and repetitive, lacking specific details to ground its claims, making it less useful for understanding the game's worth.
+
+Best to worst ranking:
+1. Advanced Agentic RAG with Base Model
+2. Basic RAG
+3. Base LLM (No RAG)
+4. Advanced Agentic RAG with Fine-Tuned Model
+
+Overall comparison:
+The advanced agentic RAG with the base model outperformed the others, providing a thorough evaluation grounded in review evidence. The basic RAG followed, offering a solid overview but lacking some nuance. The base LLM struggled with outdated information, while the fine-tuned model fell short in clarity and specificity, making it the least effective overall.
+
+====================================================================================================
+QUESTION: What do players think about the difficulty of Monster Hunter Wilds?
+====================================================================================================
+
+Base LLM (No RAG)
+----------------------------------------------------------------------------------------------------
+groundedness=2, completeness=3, nuance=2, clarity=4, overall_quality=2
+rationale: The answer provides generic insights about the game but does not reference specific player reviews or evidence, making it less grounded.
+
+Basic RAG
+----------------------------------------------------------------------------------------------------
+groundedness=4, completeness=4, nuance=4, clarity=4, overall_quality=4
+rationale: This response effectively incorporates mixed sentiments from player reviews, addressing both early and high-rank experiences, which enhances its groundedness and completeness.
+
+Advanced Agentic RAG with Base Model
+----------------------------------------------------------------------------------------------------
+groundedness=4, completeness=4, nuance=5, clarity=5, overall_quality=5
+rationale: It synthesizes the mixed sentiments very well, providing specific player critiques and acknowledging the increasing challenge level, reflecting high nuance and clarity.
+
+Advanced Agentic RAG with Fine-Tuned Model
+----------------------------------------------------------------------------------------------------
+groundedness=1, completeness=1, nuance=1, clarity=1, overall_quality=1
+rationale: The repetitive and nonsensical nature of the response fails to address the question or provide meaningful insights, resulting in the lowest scores.
+
+Best to worst ranking:
+1. Advanced Agentic RAG with Base Model
+2. Basic RAG
+3. Base LLM (No RAG)
+4. Advanced Agentic RAG with Fine-Tuned Model
+
+Overall comparison:
+The advanced agentic RAG with the base model ranks highest for effectively capturing mixed sentiments and providing clear, grounded responses based on player feedback. Basic RAG also performs well, albeit slightly less nuanced. The base LLM offers generic insights but lacks grounding in specific reviews. The fine-tuned model performed poorly due to a lack of coherence and relevance.
