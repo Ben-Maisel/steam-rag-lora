@@ -1,14 +1,12 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 from pathlib import Path
+
 import torch
-import os
-
-
-
 
 
 def resolve_device(device_arg: str) -> str:
@@ -25,10 +23,9 @@ def print_device_info(device: str) -> None:
     print("Torch version:", torch.__version__)
     print("CUDA available:", torch.cuda.is_available())
     print("Effective device:", device)
+    print("Visible GPUs:", os.environ.get("CUDA_VISIBLE_DEVICES", "ALL"))
 
     if device == "cuda":
-        visible = os.environ.get("CUDA_VISIBLE_DEVICES", "ALL")
-        print("Visible GPUs:", visible)
         print("Using GPU:", torch.cuda.get_device_name(0))
     else:
         print("Using CPU")
@@ -42,16 +39,22 @@ def print_banner() -> None:
     print("=" * 72, flush=True)
 
 
-def run(cmd: list[str], description: str, verbose: bool) -> None:
+def run(
+    cmd: list[str],
+    description: str,
+    verbose: bool,
+    env: dict[str, str] | None = None,
+) -> None:
     print(f"\n{description} ...", flush=True)
 
     if verbose:
-        result = subprocess.run(cmd)
+        result = subprocess.run(cmd, env=env)
     else:
         result = subprocess.run(
             cmd,
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
+            env=env,
         )
 
     if result.returncode != 0:
@@ -64,29 +67,44 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--verbose", action="store_true", help="Show subprocess logs.")
     parser.add_argument("--skip_train", action="store_true", help="Skip LoRA training.")
-    parser.add_argument("--no_interactive", action="store_true", help="Do not start interactive mode at the end.")
+    parser.add_argument(
+        "--no_interactive",
+        action="store_true",
+        help="Do not start interactive mode at the end.",
+    )
     parser.add_argument(
         "--device",
         type=str,
         default="auto",
         choices=["cpu", "cuda", "auto"],
-        help="Device for LoRA training",
+        help="Device for LoRA training.",
     )
     parser.add_argument(
         "--gpu",
         type=int,
         default=0,
-        help="GPU index to use for LoRA training",
+        help="Physical GPU index to make visible for LoRA training.",
     )
     args = parser.parse_args()
 
-    if args.device == "cuda":
+    # Resolve effective device first
+    device = resolve_device(args.device)
+
+    # Restrict visibility to exactly one GPU if using CUDA
+    if device == "cuda":
         os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
 
-    device = resolve_device(args.device)
     print_device_info(device)
-
     print_banner()
+
+    # Base env for child processes
+    base_env = os.environ.copy()
+    base_env["TOKENIZERS_PARALLELISM"] = "false"
+
+    # Training env: force single-GPU visibility if CUDA is being used
+    train_env = base_env.copy()
+    if device == "cuda":
+        train_env["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
 
     # Paths used for existence checks
     reviews_csv = Path("data/steam_reviews_out/ALL_STEAM_REVIEWS.csv")
@@ -101,6 +119,7 @@ def main() -> None:
             [sys.executable, "data/scrape_steam_reviews.py"],
             "Scraping Steam reviews",
             args.verbose,
+            env=base_env,
         )
     else:
         print("\nScraping Steam reviews ... skipped (reviews CSV already exists)", flush=True)
@@ -118,15 +137,20 @@ def main() -> None:
             ],
             "Chunking and embedding Steam reviews",
             args.verbose,
+            env=base_env,
         )
     else:
-        print("\nChunking and embedding Steam reviews ... skipped (parquet already exists)", flush=True)
+        print(
+            "\nChunking and embedding Steam reviews ... skipped (parquet already exists)",
+            flush=True,
+        )
 
     # 3. Setup Pinecone env / index
     run(
         [sys.executable, "src/setup_pinecone_env.py"],
         "Setting up Pinecone environment",
         args.verbose,
+        env=base_env,
     )
 
     # 4. Upload vectors to Pinecone
@@ -143,6 +167,7 @@ def main() -> None:
         ],
         "Uploading vectors to Pinecone",
         args.verbose,
+        env=base_env,
     )
 
     # 5. Build Steam LoRA train/eval data
@@ -151,9 +176,13 @@ def main() -> None:
             [sys.executable, "-m", "src.lora.build_steam_lora_data"],
             "Building Steam LoRA dataset",
             args.verbose,
+            env=base_env,
         )
     else:
-        print("\nBuilding Steam LoRA dataset ... skipped (train/eval JSONL already exist)", flush=True)
+        print(
+            "\nBuilding Steam LoRA dataset ... skipped (train/eval JSONL already exist)",
+            flush=True,
+        )
 
     # 6. Train LoRA adapter
     if args.skip_train:
@@ -168,11 +197,10 @@ def main() -> None:
                 "src.lora.train_lora",
                 "--epochs",
                 "3",
-                "--device",
-                device,
             ],
             "Training LoRA adapter",
             args.verbose,
+            env=train_env,
         )
 
     # 7. Run the 6 evaluation questions
@@ -180,6 +208,7 @@ def main() -> None:
         [sys.executable, "-m", "src.agents.agentic_rag", "--mode", "test"],
         "Running 6-question system evaluation",
         args.verbose,
+        env=base_env,
     )
 
     # 8. Evaluate latest response file with judge LLM
@@ -187,12 +216,16 @@ def main() -> None:
         [sys.executable, "-m", "src.evaluate_latest_responses"],
         "Evaluating latest responses with judge LLM",
         args.verbose,
+        env=base_env,
     )
 
     # 9. Start interactive mode
     if not args.no_interactive:
         print("\nStarting interactive mode ...", flush=True)
-        subprocess.run([sys.executable, "-m", "src.agents.agentic_rag", "--mode", "interactive"])
+        subprocess.run(
+            [sys.executable, "-m", "src.agents.agentic_rag", "--mode", "interactive"],
+            env=base_env,
+        )
     else:
         print("\nInteractive mode ... skipped (--no_interactive used)", flush=True)
 
